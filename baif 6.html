@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  //  Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V.
+    //Chương trình tìm xem V có nằm trong mảng số nguyên không? Nếu V thuộc mảng số nguyên thì in ra
+   // "V is in the array" còn lại in ra "V is not in the array"
+//  let arr = [];
+
+
+  function initArr(){
+      let arr = [];
+      for (let i = 0; i < 10; i++) {
+          let ai = Math.floor(Math.random()*10);
+          arr.push(ai);
+      }
+      return arr;
+  }
+  initArr();
+  function checkNum(){
+      let arr = initArr();
+      for (let i = 0; i < arr.length; i++) {
+          if (arr[i]==5){
+              alert('co');
+
+          }else {
+              alert('k co')
+          }
+
+      }
+      console.log(arr);
+  }
+  checkNum();
+</script>
+</body>
+</html>
